@@ -97,25 +97,25 @@ docker-compose down
 After running the `spark-submit`:
 
 ### Filtrez les transactions avec un montant supérieur à un certain seuil (par exemple,100 €):
-[Analysis 1 Results](screenshots/img1.png)
+![Analysis 1 Results](screenshots/img1.png)
 
 ### Remplacez les valeurs nulles dans les colonnes amount et category par des valeurs par défaut:
-[Analysis 2 Results](screenshots/img2.png)
+![Analysis 2 Results](screenshots/img2.png)
 
 ### Convertissez la colonne date en un format de date pour permettre des analyses temporelles:
-[Analysis 3 Results](screenshots/img3.png)
+![Analysis 3 Results](screenshots/img3.png)
 
 ### Calculez le total des ventes pour l'ensemble de la période:
-[Analysis 4 Results](screenshots/img4.png)
+![Analysis 4 Results](screenshots/img4.png)
 
 ### Calculez le montant total des ventes par catégorie de produit:
-[Analysis 5 Results](screenshots/img5.png)
+![Analysis 5 Results](screenshots/img5.png)
 
 ### Calculez le montant total des ventes par mois:
-[Analysis 6 Results](screenshots/img6.png)
+![Analysis 6 Results](screenshots/img6.png)
 
 ### Identifiez les 5 produits les plus vendus en termes de montant total:
-[Analysis 7 Results](screenshots/img7.png)
+![Analysis 7 Results](screenshots/img7.png)
 
 ### Pour chaque catégorie, trouvez le produit le plus vendu:
-[Analysis 8 Results](screenshots/img8.png)
+![Analysis 8 Results](screenshots/img8.png)
