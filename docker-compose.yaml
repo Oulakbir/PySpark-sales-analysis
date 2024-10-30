@@ -1,0 +1,37 @@
+version: '3'
+services:
+  spark-master:
+    image: bitnami/spark:latest
+    container_name: spark-master
+    environment:
+      - SPARK_MODE=master
+      - SPARK_MASTER_HOST=spark-master
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    volumes:
+      - ./app.py:/app/app.py  # Partager le script avec le conteneur
+      - ./app1.py:/app/app1.py
+      - ./ventes.csv:/app/ventes.csv  # Fichier CSV renommé
+  spark-worker1:
+    image: bitnami/spark:latest
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+    depends_on:
+      - spark-master
+    volumes:
+      - ./app.py:/app/app.py
+      - ./app1.py:/app/app1.py
+      - ./ventes.csv:/app/ventes.csv  # Fichier CSV renommé
+  spark-worker2:
+    image: bitnami/spark:latest
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+    depends_on:
+      - spark-master
+    volumes:
+      - ./app.py:/app/app.py
+      - ./app1.py:/app/app1.py
+      - ./ventes.csv:/app/ventes.csv  # Fichier CSV renommé

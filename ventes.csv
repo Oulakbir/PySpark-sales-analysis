@@ -1,0 +1,11 @@
+transaction_id,client_id,product_id,date,amount,category
+1,1001,P001,2023-01-15,150,Electronics
+2,1002,P002,2023-02-20,75,Clothing
+3,1003,P003,2023-01-25,200,Home
+4,1004,P001,2023-03-12,300,Electronics
+5,1005,P004,2023-02-05,90,Clothing
+6,1006,P005,2023-03-20,120,Home
+7,1007,P002,2023-01-10,50,Clothing
+8,1008,P003,2023-02-18,180,Home
+9,1009,P006,2023-01-30,220,Electronics
+10,1010,P004,2023-03-25,80,Clothing
